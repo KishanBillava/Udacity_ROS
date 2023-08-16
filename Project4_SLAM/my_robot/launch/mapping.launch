@@ -52,6 +52,10 @@
 
       <!-- Set to false to avoid saving data when robot is not moving -->
       <param name="Mem/NotLinkedNodesKept" type="string" value="false"/>
+
+      <!-- Testing-->
+      <param name="Optimizer/Robust" type="string" value="true"/>
+      
     </node>
 
     <!-- visualization with rtabmapviz -->
@@ -65,7 +69,7 @@
         <remap from="rgb/camera_info" to="$(arg camera_info_topic)"/>
         <remap from="scan"            to="/scan"/>
     </node>
-
+     
     
   </group>
 </launch>
