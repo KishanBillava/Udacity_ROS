@@ -122,8 +122,8 @@ source devel/setup.bash
 * 
 
 8. Virtual Objects
-
+* 
 
 9. Your Home Service Robot
-
+* 
 
