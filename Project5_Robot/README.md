@@ -139,7 +139,13 @@ source devel/setup.bash
 * Update the code for the simulation of picking up and dropping off objects  within the map location. update the CMakeLists.txt and deploy using add_markers.sh script 
 
 9. Your Home Service Robot
-* sasdas
+* Create a `home_service.sh` script to launch turtlebot, AMCL, RVIZ using a config file, pick_objects, add_makers
+* Create add_makers C++ node to establish communications between the robot and the markers
+* add_markers node subscribe to your robot odometry and keep track of your robot pose.
+  - Initially show the marker at the pickup zone
+  - Hide the marker once your robot reaches the pickup zone
+  - Wait 5 seconds to simulate a pickup
+  - Show the marker at the drop-off zone once your robot reaches it
 
 ![image](https://github.com/KishanBillava/Udacity_ROS/assets/84302215/1e860409-7fe8-40bd-a70f-80343b29da4a)
 
