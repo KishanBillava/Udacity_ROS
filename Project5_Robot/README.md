@@ -50,6 +50,7 @@ Udacity Robotics Software Engineer Nanodegree
 ### Overview  
 
 1. **ROS Launch Files:** Launch files are XML files that specify a collection of nodes and their parameters to be run together. They simplify the process of starting multiple nodes with specific configurations.
-
-
-
+2. **Gazebo:** Gazebo is a powerful 3D simulation environment that allows you to model, simulate, and visualize robots and environments. It's used to simulate the robot's interactions with its surroundings.
+3. **RViz:** RViz is a visualization tool that provides real-time visualization of robot sensor data and other information. It's used to visualize the robot's sensor data, trajectories, and maps.
+4. **ROS Navigation Stack:** The Navigation Stack is a collection of packages that enables a robot to autonomously navigate within an environment. It includes modules for path planning, localization, and obstacle avoidance.
+5. **gmapping:** The gmapping package implements the GMapping algorithm, which stands for "Grid-based FastSLAM" for mapping. This package allows the robot to create a map of its environment while localizing itself within that map. It uses sensor data such as laser scans and odometry to build an occupancy grid map.
