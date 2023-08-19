@@ -85,7 +85,7 @@ catkin_make
 source devel/setup.bash
 ```
 
-### 2 Your Packages and Directories
+### 2. Your Packages and Directories
 
 * **map:** Inside this directory, you will store your gazebo world file and the map generated from SLAM.
 * **scripts:** Inside this directory, you’ll store your shell scripts.
@@ -93,7 +93,8 @@ source devel/setup.bash
 * **pick_objects:** You will write a node that commands your robot to drive to the pickup and drop off zones.
 * **add_markers:** You will write a node that model the object with a marker in rviz.
   
-### 3. scripts: Contains shell scripts for running various parts of the project. `add_markers.sh`, `home_service.sh`, `pick_objects.sh`, `test_navigation.sh`, `test_slam.sh`: Shell scripts for executing different functionalities.
+### 3. scripts: 
+* Contains shell scripts for running various parts of the project. `add_markers.sh`, `home_service.sh`, `pick_objects.sh`, `test_navigation.sh`, `test_slam.sh`: Shell scripts for executing different functionalities.
 
 ### 4. Building Editor in Gazebo
 * Copy the world from the build Editor project
