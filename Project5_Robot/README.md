@@ -47,6 +47,7 @@ Udacity Robotics Software Engineer Nanodegree
     ├── turtlebot_gazebo
 
 ```
+1. **ROS Launch Files:** Launch files are XML files that specify a collection of nodes and their parameters to be run together. They simplify the process of starting multiple nodes with specific configurations.
 
 
 
