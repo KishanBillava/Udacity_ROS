@@ -85,12 +85,32 @@ catkin_make
 source devel/setup.bash
 ```
 
-
 2. Your Packages and Directories
-* map: Inside this directory, you will store your gazebo world file and the map generated from SLAM.
-* scripts: Inside this directory, you’ll store your shell scripts.
-* rvizConfig: Inside this directory, you’ll store your customized rviz configuration files.
-* pick_objects: You will write a node that commands your robot to drive to the pickup and drop off zones.
-* add_markers: You will write a node that model the object with a marker in rviz.
+* **map:** Inside this directory, you will store your gazebo world file and the map generated from SLAM.
+* **scripts:** Inside this directory, you’ll store your shell scripts.
+* **rvizConfig:** Inside this directory, you’ll store your customized rviz configuration files.
+* **pick_objects:** You will write a node that commands your robot to drive to the pickup and drop off zones.
+* **add_markers:** You will write a node that model the object with a marker in rviz.
   
-3. 
+3. **scripts:** Contains shell scripts for running various parts of the project. `add_markers.sh`, `home_service.sh`, `pick_objects.sh`, `test_navigation.sh`, `test_slam.sh`: Shell scripts for executing different functionalities.
+
+4. SLAM Testing
+* create a `test_slam.sh` shell script that launches that deploys turtlebot_gazebo world using your  world file
+* Add launch file for gmapping, navigation to view the map on rvix
+* Also Add keyboard_teleop.launch to control keyboard 
+
+![image](https://github.com/KishanBillava/Udacity_ROS/assets/84302215/cac6b7bd-f06a-484b-94f8-bd7ad729812f)
+
+
+5. Localization and Navigation Testing
+
+
+6. Navigation Goal Node
+
+
+7. Virtual Objects
+
+
+8. Your Home Service Robot
+
+
