@@ -152,4 +152,16 @@ source devel/setup.bash
 
 
 ## Algorithm Overview  
+This includes the use of the Adaptive Monte Carlo Localization (AMCL) algorithm for localization and Dijkstra's algorithm (based on the A* algorithm) for global path planning.
+### AMCL (Adaptive Monte Carlo Localization):
+
+* AMCL is used for localization, which means determining the robot's pose (position and orientation) in the environment.
+* It uses particle filtering to estimate the robot's position by comparing sensor data (like laser scans) to a map.
+* It's a probabilistic algorithm that adjusts the robot's pose estimate over time based on sensor readings and motion updates.
+
+### Dijkstra's Algorithm for Global Path Planning:
+
+* The ROS navigation stack utilizes the Dijkstra's algorithm (a variant of A*) for global path planning.
+* This algorithm calculates an optimal path from the robot's current position to the goal, considering the cost of traversing each cell on the map.
+* It finds the shortest path while avoiding obstacles and takes into account the weight or cost of each cell to reach the goal.
 
