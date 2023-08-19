@@ -61,7 +61,7 @@ Udacity Robotics Software Engineer Nanodegree
 ## Procedure for home service robot 
 The `home_service.sh` contains shell scripts for running various parts of the project to create a complete home service robot scenario. It involves mapping, localization, path planning, and visualization to simulate a robot picking up an object and delivering it to a drop-off location in a home environment.
 
-1. **Project Workspace** : commands in the workspace terminal to set it up for the project
+#### 1. **Project Workspace** : commands in the workspace terminal to set it up for the project
 
 ```
 mkdir -p ~/catkin_ws/src
@@ -85,7 +85,7 @@ catkin_make
 source devel/setup.bash
 ```
 
-2. **Your Packages and Directories**
+#### 2. **Your Packages and Directories**
 
 * **map:** Inside this directory, you will store your gazebo world file and the map generated from SLAM.
 * **scripts:** Inside this directory, you’ll store your shell scripts.
@@ -93,15 +93,15 @@ source devel/setup.bash
 * **pick_objects:** You will write a node that commands your robot to drive to the pickup and drop off zones.
 * **add_markers:** You will write a node that model the object with a marker in rviz.
   
-3. **scripts:** Contains shell scripts for running various parts of the project. `add_markers.sh`, `home_service.sh`, `pick_objects.sh`, `test_navigation.sh`, `test_slam.sh`: Shell scripts for executing different functionalities.
+#### 3. **scripts:** Contains shell scripts for running various parts of the project. `add_markers.sh`, `home_service.sh`, `pick_objects.sh`, `test_navigation.sh`, `test_slam.sh`: Shell scripts for executing different functionalities.
 
-4. **Building Editor in Gazebo**
+#### 4. **Building Editor in Gazebo**
 * Copy the world from the build Editor project
 * generate a map using `pgm_map_creator` edit the map.yaml file
 ![image](https://github.com/KishanBillava/Udacity_ROS/assets/84302215/d33121aa-3759-46b2-a9a4-6f9a4dc48480)
 
 
-5. **SLAM Testing**
+#### 5. **SLAM Testing**
 * Create a `test_slam.sh` shell script that launches that deploys turtlebot_gazebo world using your  world file
 * Add launch file for gmapping, navigation to view the map on rvix
 * Also Add keyboard_teleop.launch to control keyboard 
@@ -109,7 +109,7 @@ source devel/setup.bash
 ![image](https://github.com/KishanBillava/Udacity_ROS/assets/84302215/cac6b7bd-f06a-484b-94f8-bd7ad729812f)
 
 
-6. Localization and Navigation Testing
+#### 6. Localization and Navigation Testing
 * Create a `test_navigation.sh` shell script that launches that deploys turtlebot_gazebo world
 * amcl_demo to localize the turtlebot
 * Also add view_navigation to view the map on rviz
@@ -118,14 +118,14 @@ source devel/setup.bash
 ![image](https://github.com/KishanBillava/Udacity_ROS/assets/84302215/4b9e61ec-bc1e-4918-8f37-b1ba4d199816)
 
 
-7. Navigation Goal Node
+#### 7. Navigation Goal Node
 * write a node that will communicate with the ROS navigation stack and autonomously send successive goals for your robot to reach.
 * Create pick_objects package  and pick_objects.sh script with launch file and c++ node
 * Update the code to reach two goal locations within the map. update the CMakeLists.txt and deploy using the pick_objects.sh script 
 * The `pick_objects` package orchestrates robot movement for task execution. It sends navigation goals to the move_base package, simulating tasks like picking up and dropping off objects.
 * The move_base package offers a navigation stack for autonomous path planning and execution. It generates optimal paths for the robot to navigate from its current location to desired goal locations while avoiding obstacles.
 
-8. Virtual Objects
+#### 8. Virtual Objects
 * The virtual object is the one being picked and delivered by the robot, thus it should first appear in its pickup zone, and then in its drop-off zone once the robot reaches it.
   - Publish the marker at the pickup zone
   - Pause 5 seconds
@@ -138,7 +138,7 @@ source devel/setup.bash
 * Create add_markers package and add_markers.sh script with launch file and c++ node
 * Update the code for the simulation of picking up and dropping off objects  within the map location. update the CMakeLists.txt and deploy using add_markers.sh script 
 
-9. Your Home Service Robot
+#### 9. Your Home Service Robot
 * Create a `home_service.sh` script to launch turtlebot, AMCL, RVIZ using a config file, pick_objects, add_makers
 * Create add_makers C++ node to establish communications between the robot and the markers
 * add_markers node subscribe to your robot odometry and keep track of your robot pose.
