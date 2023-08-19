@@ -58,4 +58,39 @@ Udacity Robotics Software Engineer Nanodegree
 7. **pick_objects:** The pick_objects package is another custom package. The robot is instructed to navigate to a pickup location, simulate picking up an object, move to a drop-off location, and then simulate dropping off the object.
 8. **scripts:** Contains shell scripts for running various parts of the project. `add_markers.sh`, `home_service.sh`, `pick_objects.sh`, `test_navigation.sh`, `test_slam.sh`: Shell scripts for executing different functionalities.
 
-### Overview 
+### Procedure for home service robot 
+The `home_service.sh` contains shell scripts for running various parts of the project to create a complete home service robot scenario. It involves mapping, localization, path planning, and visualization to simulate a robot picking up an object and delivering it to a drop-off location in a home environment.
+
+1. Project Workspace : commands in the workspace terminal to set it up for the project:
+
+```
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+catkin_init_workspace
+cd ..
+catkin_make
+sudo apt-get update
+cd ~/catkin_ws/src
+git clone https://github.com/ros-perception/slam_gmapping
+git clone https://github.com/turtlebot/turtlebot
+git clone https://github.com/turtlebot/turtlebot_interactions
+git clone https://github.com/turtlebot/turtlebot_simulator
+cd ~/catkin_ws/
+source devel/setup.bash
+rosdep -i install gmapping
+rosdep -i install turtlebot_teleop
+rosdep -i install turtlebot_rviz_launchers
+rosdep -i install turtlebot_gazebo
+catkin_make
+source devel/setup.bash
+```
+
+
+2. Your Packages and Directories
+* map: Inside this directory, you will store your gazebo world file and the map generated from SLAM.
+* scripts: Inside this directory, you’ll store your shell scripts.
+* rvizConfig: Inside this directory, you’ll store your customized rviz configuration files.
+* pick_objects: You will write a node that commands your robot to drive to the pickup and drop off zones.
+* add_markers: You will write a node that model the object with a marker in rviz.
+  
+3. 
