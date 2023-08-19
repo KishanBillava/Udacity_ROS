@@ -61,7 +61,7 @@ Udacity Robotics Software Engineer Nanodegree
 ### Procedure for home service robot 
 The `home_service.sh` contains shell scripts for running various parts of the project to create a complete home service robot scenario. It involves mapping, localization, path planning, and visualization to simulate a robot picking up an object and delivering it to a drop-off location in a home environment.
 
-1. Project Workspace : commands in the workspace terminal to set it up for the project:
+1. **Project Workspace** : commands in the workspace terminal to set it up for the project
 
 ```
 mkdir -p ~/catkin_ws/src
@@ -85,7 +85,8 @@ catkin_make
 source devel/setup.bash
 ```
 
-2. Your Packages and Directories
+2. **Your Packages and Directories**
+
 * **map:** Inside this directory, you will store your gazebo world file and the map generated from SLAM.
 * **scripts:** Inside this directory, you’ll store your shell scripts.
 * **rvizConfig:** Inside this directory, you’ll store your customized rviz configuration files.
@@ -94,7 +95,13 @@ source devel/setup.bash
   
 3. **scripts:** Contains shell scripts for running various parts of the project. `add_markers.sh`, `home_service.sh`, `pick_objects.sh`, `test_navigation.sh`, `test_slam.sh`: Shell scripts for executing different functionalities.
 
-4. SLAM Testing
+4. **Building Editor in Gazebo**
+* Copy the world from the build Editor project
+* generate a map using `pgm_map_creator` edit the map.yaml file
+![image](https://github.com/KishanBillava/Udacity_ROS/assets/84302215/d33121aa-3759-46b2-a9a4-6f9a4dc48480)
+
+
+5. **SLAM Testing**
 * create a `test_slam.sh` shell script that launches that deploys turtlebot_gazebo world using your  world file
 * Add launch file for gmapping, navigation to view the map on rvix
 * Also Add keyboard_teleop.launch to control keyboard 
@@ -102,15 +109,21 @@ source devel/setup.bash
 ![image](https://github.com/KishanBillava/Udacity_ROS/assets/84302215/cac6b7bd-f06a-484b-94f8-bd7ad729812f)
 
 
-5. Localization and Navigation Testing
+6. Localization and Navigation Testing
+* create a `test_navigation.sh` shell script that launches that deploys turtlebot_gazebo world
+* amcl_demo to localize the turtlebot
+* Also add view_navigation to view the map on rviz
+* provide the 2d nav goal and test  functionality
+
+![image](https://github.com/KishanBillava/Udacity_ROS/assets/84302215/4b9e61ec-bc1e-4918-8f37-b1ba4d199816)
 
 
-6. Navigation Goal Node
+7. Navigation Goal Node
 
 
-7. Virtual Objects
+8. Virtual Objects
 
 
-8. Your Home Service Robot
+9. Your Home Service Robot
 
 
