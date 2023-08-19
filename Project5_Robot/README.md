@@ -85,7 +85,7 @@ catkin_make
 source devel/setup.bash
 ```
 
-### 2. Your Packages and Directories
+### 2 Your Packages and Directories
 
 * **map:** Inside this directory, you will store your gazebo world file and the map generated from SLAM.
 * **scripts:** Inside this directory, you’ll store your shell scripts.
