@@ -61,7 +61,7 @@ Udacity Robotics Software Engineer Nanodegree
 ## Procedure for home service robot 
 The `home_service.sh` contains shell scripts for running various parts of the project to create a complete home service robot scenario. It involves mapping, localization, path planning, and visualization to simulate a robot picking up an object and delivering it to a drop-off location in a home environment.
 
-#### 1. **Project Workspace** : commands in the workspace terminal to set it up for the project
+### 1. Project Workspace : commands in the workspace terminal to set it up for the project
 
 ```
 mkdir -p ~/catkin_ws/src
