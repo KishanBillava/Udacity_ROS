@@ -2,7 +2,7 @@
 Udacity Robotics Software Engineer Nanodegree
 
 
-### ROS Packages Folders and Files Structure for Home Service Robot Project 
+## ROS Packages Folders and Files Structure for Home Service Robot Project 
 ```sh
 ├── add_markers
 │   ├── CMakeLists.txt
@@ -47,7 +47,7 @@ Udacity Robotics Software Engineer Nanodegree
     ├── turtlebot_gazebo
 
 ```
-### Overview  
+## Overview  
 
 1. **ROS Launch Files:** Launch files are XML files that specify a collection of nodes and their parameters to be run together. They simplify the process of starting multiple nodes with specific configurations.
 2. **Gazebo:** Gazebo is a powerful 3D simulation environment that allows you to model, simulate, and visualize robots and environments. It's used to simulate the robot's interactions with its surroundings.
@@ -58,7 +58,7 @@ Udacity Robotics Software Engineer Nanodegree
 7. **pick_objects:** The pick_objects package is another custom package. The robot is instructed to navigate to a pickup location, simulate picking up an object, move to a drop-off location, and then simulate dropping off the object.
 8. **scripts:** Contains shell scripts for running various parts of the project. `add_markers.sh`, `home_service.sh`, `pick_objects.sh`, `test_navigation.sh`, `test_slam.sh`: Shell scripts for executing different functionalities.
 
-### Procedure for home service robot 
+## Procedure for home service robot 
 The `home_service.sh` contains shell scripts for running various parts of the project to create a complete home service robot scenario. It involves mapping, localization, path planning, and visualization to simulate a robot picking up an object and delivering it to a drop-off location in a home environment.
 
 1. **Project Workspace** : commands in the workspace terminal to set it up for the project
@@ -150,5 +150,5 @@ source devel/setup.bash
 ![image](https://github.com/KishanBillava/Udacity_ROS/assets/84302215/1e860409-7fe8-40bd-a70f-80343b29da4a)
 
 
-### Algorithm Overview  
+## Algorithm Overview  
 
