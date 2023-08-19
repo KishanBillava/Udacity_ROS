@@ -2,9 +2,9 @@
 Udacity Robotics Software Engineer Nanodegree
 
 
-### ROS Packages Used in Udacity Home Service Robot Project 
+### ROS Packages Folders and Files Structure for Home Service Robot Project 
 ```sh
-├── add_markers
+├── **add_markers**
 │   ├── CMakeLists.txt
 │   ├── launch
 │   │   ├── add_markers.launch
@@ -14,11 +14,11 @@ Udacity Robotics Software Engineer Nanodegree
 │       ├── add_markers.cpp
 │       └── markers_time.cpp
 ├── CMakeLists.txt
-├── map
+├── **map**
 │   ├── map.pgm
 │   ├── map.yaml
 │   └── slam_test.world
-├── pick_objects
+├── **pick_objects**
 │   ├── CMakeLists.txt
 │   ├── launch
 │   │   └── pick_objects.launch
@@ -26,25 +26,27 @@ Udacity Robotics Software Engineer Nanodegree
 │   └── src
 │       └── pick_objects.cpp
 ├── README.md
-├── rvizConfig
+├── **rvizConfig**
 │   ├── home_service.rviz
 │   ├── nav_test.rviz
 │   └── slam_test.rviz
-├── scripts
+├── **scripts**
 │   ├── add_markers.sh
 │   ├── home_service.sh
 │   ├── pick_objects.sh
 │   ├── test_navigation.sh
 │   └── test_slam.sh
-├── slam_gmapping
+├── **slam_gmapping**
 │   ├── gmapping
 │   └── slam_gmapping
-├── turtlebot
+├── **turtlebot**
 │   └── turtlebot_teleop
-├── turtlebot_interactions
+├── **turtlebot_interactions**
 │
-└── turtlebot_simulator
+└── **turtlebot_simulator**
     ├── turtlebot_gazebo
 
 ```
+
+
 
