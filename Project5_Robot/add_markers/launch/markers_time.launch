@@ -1,0 +1,5 @@
+<launch>
+  <!-- Start the pick_objects node -->
+  <node name="markers_time" pkg="add_markers" type="markers_time" output="screen">
+  </node>
+</launch>

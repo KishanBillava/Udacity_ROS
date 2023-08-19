@@ -1,0 +1,5 @@
+<launch>
+  <!-- Start the pick_objects node -->
+  <node name="pick_objects" pkg="pick_objects" type="pick_objects" output="screen">
+  </node>
+</launch>
