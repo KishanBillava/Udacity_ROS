@@ -119,6 +119,8 @@ source devel/setup.bash
 
 
 7. Navigation Goal Node
+* write a node that will communicate with the ROS navigation stack and autonomously send successive goals for your robot to reach.
+* Create pick_objects package  and pick_objects.sh script with launch file and c++ node
 * 
 
 8. Virtual Objects
