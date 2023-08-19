@@ -102,7 +102,7 @@ source devel/setup.bash
 
 
 5. **SLAM Testing**
-* create a `test_slam.sh` shell script that launches that deploys turtlebot_gazebo world using your  world file
+* Create a `test_slam.sh` shell script that launches that deploys turtlebot_gazebo world using your  world file
 * Add launch file for gmapping, navigation to view the map on rvix
 * Also Add keyboard_teleop.launch to control keyboard 
 
@@ -110,7 +110,7 @@ source devel/setup.bash
 
 
 6. Localization and Navigation Testing
-* create a `test_navigation.sh` shell script that launches that deploys turtlebot_gazebo world
+* Create a `test_navigation.sh` shell script that launches that deploys turtlebot_gazebo world
 * amcl_demo to localize the turtlebot
 * Also add view_navigation to view the map on rviz
 * provide the 2d nav goal and test  functionality
@@ -121,23 +121,28 @@ source devel/setup.bash
 7. Navigation Goal Node
 * write a node that will communicate with the ROS navigation stack and autonomously send successive goals for your robot to reach.
 * Create pick_objects package  and pick_objects.sh script with launch file and c++ node
-* Update the code to reach two goal location within the map. update the CMakeLists.txt and deploy using pick_objects.sh script 
+* Update the code to reach two goal locations within the map. update the CMakeLists.txt and deploy using the pick_objects.sh script 
 * The `pick_objects` package orchestrates robot movement for task execution. It sends navigation goals to the move_base package, simulating tasks like picking up and dropping off objects.
 * The move_base package offers a navigation stack for autonomous path planning and execution. It generates optimal paths for the robot to navigate from its current location to desired goal locations while avoiding obstacles.
 
 8. Virtual Objects
-* The virtual object is the one being picked and delivered by the robot, thus it should first appear in its pickup zone, and then in its drop off zone once the robot reaches it.
+* The virtual object is the one being picked and delivered by the robot, thus it should first appear in its pickup zone, and then in its drop-off zone once the robot reaches it.
   - Publish the marker at the pickup zone
   - Pause 5 seconds
   - Hide the marker
   - Pause 5 seconds
-  - Publish the marker at the drop off zone
+  - Publish the marker at the drop-off zone
  
 ![image](https://github.com/KishanBillava/Udacity_ROS/assets/84302215/135929a8-8484-4c74-aeb0-985f3c103d3e)
 
 * Create add_markers package and add_markers.sh script with launch file and c++ node
-* Update the code for simulation of picking up and dropping off objects  within the map location. update the CMakeLists.txt and deploy using add_markers.sh script 
+* Update the code for the simulation of picking up and dropping off objects  within the map location. update the CMakeLists.txt and deploy using add_markers.sh script 
 
 9. Your Home Service Robot
-* 
+* sasdas
+
+![image](https://github.com/KishanBillava/Udacity_ROS/assets/84302215/1e860409-7fe8-40bd-a70f-80343b29da4a)
+
+
+### Algorithm Overview  
 
