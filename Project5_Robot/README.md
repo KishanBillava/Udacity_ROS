@@ -119,7 +119,7 @@ source devel/setup.bash
 
 
 7. Navigation Goal Node
-
+* 
 
 8. Virtual Objects
 
